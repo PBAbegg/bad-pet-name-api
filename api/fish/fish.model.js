@@ -7,7 +7,12 @@ const fishSchema = new Schema({
         unique: true,
         required: false,
     },
-    fishTypeOrColor: {
+    fishSpecies:{
+        type: String,
+        unique: false,
+        required: false,
+    },
+    fishColor: {
         type: String,
         unique: false,
         required: false,

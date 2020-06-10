@@ -23,7 +23,7 @@ db();
 
 
 //tell server to use all of the routes
-server.use('/', routerGen(Cat));
+server.use('/cat', routerGen(Cat));
 server.use('/', routerGen(Dog));
 server.use('/', routerGen(Fish));
 

@@ -5,9 +5,14 @@ const catSchema = new Schema({
     catName: {
         type: String,
         unique: true,
+        required: true,
+    },
+    catSpecies:{
+        type: String,
+        unique: false,
         required: false,
     },
-    catTypeOrColor: {
+    catColor: {
         type: String,
         unique: false,
         required: false,

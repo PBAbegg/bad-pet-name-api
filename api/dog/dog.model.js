@@ -7,7 +7,12 @@ const dogSchema = new Schema({
         unique: true,
         required: false,
     },
-    dogTypeOrColor: {
+    dogSpecies:{
+        type: String,
+        unique: false,
+        required: false,
+    },
+    dogColor: {
         type: String,
         unique: false,
         required: false,
